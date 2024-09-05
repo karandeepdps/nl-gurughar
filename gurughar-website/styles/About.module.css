@@ -1,5 +1,111 @@
-.main {
-    padding: 50px;
+.hero {
+    background-image: url('/assets/gurdwara-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
     text-align: center;
+    color: black;
+    position: relative;
 }
 
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #FFD700;
+    border: none;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.section {
+    padding: 20px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* Ensure no overflow happens */
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.sectionImage {
+    width: 100%;
+    max-height: 500px; /* Add max height if the image is too large */
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+.volunteer {
+    background-color: white;
+}
+
+.volunteerButton {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #FF5733;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .section {
+        padding: 40px 10px;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .hero button,
+    .volunteerButton {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
