@@ -1,8 +1,10 @@
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: #f9f9f9;
+
 }
 
 .columns {
@@ -11,28 +13,37 @@
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
+
 }
 
-.logoColumn, .navLinksColumn, .contactColumn {
-    flex: 1;
+.logoColumn {
+    display: flex;
+    align-items: center;
+}
+
+ .navLinksColumn, .contactColumn {
     text-align: center;
 }
 
 .logoBackground {
     background-color: #0F3A61;
-    padding: 20px;
     display: inline-block;
+    flex : 1;
+    margin-right: 10px; /* Space between logo and text */
+
 }
 
 .logo {
-    width: 157px;
-    height: 164px;
-    object-fit: cover;
+    width: 200px; /* Adjust size as needed */
+    height: auto;
 }
 
 .titleContainer {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 .title {
     font-size: 24px;
@@ -40,6 +51,8 @@
     letter-spacing: 0.2em;
     font-family: 'Lulo Clean', sans-serif;
     text-align: center;
+    flex : 1;
+
 }
 
 .navLinks {
@@ -55,12 +68,28 @@
     display: inline;
 }
 
+.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+.navItem {
+    margin-left: 40px;
+}
+
 .navLink {
     text-decoration: none;
-    font-size: 1.2rem;
     color: #333;
-    transition: color 0.3s ease;
+    font-weight: bold;
+    font-size: 20px; /* Increase the font size */
+    padding: 10px; /* Optional: Add padding to make the clickable area larger */
 }
+
 
 .navLink:hover {
     color: #ff5733;
@@ -115,4 +144,10 @@
     .logoColumn {
         margin-bottom: 20px;
     }
+}
+
+.navLinksColumn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
