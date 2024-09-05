@@ -1,27 +1,118 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffd700;
-    padding: 15px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-.logo img {
-    width: 100px;
+.columns {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoColumn, .navLinksColumn, .contactColumn {
+    flex: 1;
+    text-align: center;
+}
+
+.logoBackground {
+    background-color: #0F3A61;
+    padding: 20px;
+    display: inline-block;
+}
+
+.logo {
+    width: 157px;
+    height: 164px;
+    object-fit: cover;
+}
+
+.titleContainer {
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 24px;
+    color: #0F3A61;
+    letter-spacing: 0.2em;
+    font-family: 'Lulo Clean', sans-serif;
+    text-align: center;
 }
 
 .navLinks {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-.navLinks li {
-    font-size: 18px;
+.navItem {
+    display: inline;
 }
 
-.navLinks li a {
+.navLink {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: #ff5733;
+}
+
+.contactColumn {
+    text-align: right;
+}
+
+.contactButton {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0F3A61;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contactIcon {
+    margin-left: 8px;
+    fill: white;
+}
+
+.contactInfo {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.emailLink {
+    color: #555;
+    text-decoration: underline;
+}
+
+.emailLink:hover {
+    color: #0F3A61;
+}
+
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactColumn {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .logoColumn {
+        margin-bottom: 20px;
+    }
 }
