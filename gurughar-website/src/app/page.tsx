@@ -40,7 +40,7 @@ export default function Home() {
                         <h2>Contact Us</h2>
                         <p>
                             <strong>Gurudwara Sikh Society of Newfoundland</strong><br />
-                            680 Logy Bay Rd, St. John's, NL, A1K 3B5<br />
+                            680 Logy Bay Rd, St. John&apos;s, NL, A1K 3B5<br />
                             Tel: +1 (709) 754-7454.<br />
                             Email: <a href="mailto:K@gmail.com">K@gmail.com</a>
                         </p>
