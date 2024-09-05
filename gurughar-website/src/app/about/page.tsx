@@ -33,7 +33,7 @@ function MissionAndGoals() {
         <section className={styles.section}>
             <h2>Our Mission and Goals</h2>
             <p>
-                At Gurughar, we are committed to serving the community with open arms, guided by Sikh principles. Our mission is to provide a welcoming space for worship and community service, while also promoting knowledge and understanding of the Sikh faith in St. John's.
+                At Gurughar, we are committed to serving the community with open arms, guided by Sikh principles. Our mission is to provide a welcoming space for worship and community service, while also promoting knowledge and understanding of the Sikh faith in St. John&aposs.
             </p>
         </section>
     );

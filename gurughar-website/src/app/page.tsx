@@ -51,7 +51,6 @@ export default function Home() {
                         <iframe
                             title="Gurudwara Location"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.0666124138943!2d-52.69071569999999!3d47.6248364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca6d084c2652f%3A0x923b81dc6697834f!2s680%20Logy%20Bay%20Rd%2C%20Logy%20Bay%2C%20NL%20A1K%203A2!5e0!3m2!1sen!2sca!4v1725497693959!5m2!1sen!2sca"
-                            allowFullScreen=""
                             loading="lazy"
                         ></iframe>
                     </div>
