@@ -1,6 +1,10 @@
-export const metadata = {
-    title: 'Gurughar',
-    description: 'Welcome to the Gurughar website, a place of worship and community.',
+import '../../../gurughar-website/styles/globals.css'
+// nl-gurughar/gurughar-website/styles/globals.css
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Sikh Society Newfoundland',
+    description: 'A place of worship and community for all',
 };
 
 export default function RootLayout({
