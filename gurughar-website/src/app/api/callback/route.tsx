@@ -9,10 +9,10 @@ export async function GET(req: NextRequest) {
 
     // Determine redirect URL based on the transaction result
     if (data.error_code) {
-        const errorUrl = `/api/failure?errorCode=${data.error_code}`;
+        const errorUrl = `/failure?errorCode=${data.error_code}`;
         return NextResponse.redirect(new URL(errorUrl, req.url));
     } else {
-        const successUrl = `/api/success?transactionId=${data.transaction_id || 'unknown'}`;
+        const successUrl = `/success?transactionId=${data.transaction_id || 'unknown'}`;
         return NextResponse.redirect(new URL(successUrl, req.url));
     }
 }
