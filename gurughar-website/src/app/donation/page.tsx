@@ -1,5 +1,5 @@
-// pages/payment.js
 import React from 'react';
+import Script from 'next/script';
 import styles from '../../../styles/Payment.module.css';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
@@ -22,25 +22,28 @@ export default function Payment() {
         <>
             <Navbar />
 
-        <div className={styles.container}>
-            <h1>Sikh Society-Newfoundland, NL </h1>
-            <h1> ਸਿੱਖ ਸੁਸਾਇਟੀ - ਨਿਊਫਾਊਡਲੈਂਡ  </h1>
-            <h2> Charity No </h2>
-            <div className={styles.donationGrid}>
-                {donations.map((donation, index) => (
-                    <div key={index} className={styles.donationCard}>
-                        <div className={styles.imageWrapper}>
-                            <img src={donation.image} alt={donation.description} className={styles.donationImage} />
+            <div className={styles.container}>
+                <h1>Sikh Society-Newfoundland, NL</h1>
+                <h1>ਸਿੱਖ ਸੁਸਾਇਟੀ - ਨਿਊਫਾਊਡਲੈਂਡ</h1>
+                <h2>Charity No</h2>
+                <div className={styles.donationGrid}>
+                    {donations.map((donation, index) => (
+                        <div key={index} className={styles.donationCard}>
+                            <div className={styles.imageWrapper}>
+                                <img src={donation.image} alt={donation.description} className={styles.donationImage} />
+                            </div>
+                            <p className={styles.donationDescription}>{donation.description}</p>
+                            <button className={`${styles.button} donation-button`} data-amount={donation.amount}>
+                                Donate ${donation.amount}
+                            </button>
                         </div>
-                        <p className={styles.donationDescription}>{donation.description}</p>
-                        <button className={`${styles.button} donation-button`} data-amount={donation.amount}>Donate ${donation.amount}</button>
-                    </div>
-                ))}
+                    ))}
+                </div>
+                <Footer />
             </div>
-            <Footer />
 
-        </div>
+            {/* Load the open_pos.js script */}
+            <Script src="/js/open_pos.js" strategy="afterInteractive" />
         </>
-
     );
 }
