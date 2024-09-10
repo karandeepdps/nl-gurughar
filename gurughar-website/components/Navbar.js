@@ -68,6 +68,11 @@ export default function Navbar() {
                     <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Contact
                     </Link>
+                    <Link href="/donation" className="text-gray-700 hover:text-blue-600 transition duration-200">
+                        Donate
+                    </Link>
+
+
                 </div>
             )}
         </nav>
