@@ -1,9 +1,9 @@
-'use client'; // Mark this component as a Client Component
+'use client'; // Mark the component as a client component
 
-import React from 'react';
+import React, { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-export default function Failure() {
+function FailureContent() {
     const searchParams = useSearchParams();
     const errorCode = searchParams.get('errorCode');
 
@@ -13,5 +13,13 @@ export default function Failure() {
             <p>Your transaction failed. Please try again.</p>
             {errorCode && <p>Error Code: {errorCode}</p>}
         </div>
+    );
+}
+
+export default function Failure() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <FailureContent />
+        </Suspense>
     );
 }
