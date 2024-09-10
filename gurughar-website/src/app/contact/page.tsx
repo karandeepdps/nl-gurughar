@@ -24,11 +24,11 @@ export default function Contact() {
                                 {/* Add an SVG icon here if needed */}
 
                             </div>
-                            <h2 className="text-2xl font-semibold mb-4">General Inquiry</h2>
-                            <p className="text-lg mb-2 font-medium">Gurdwara Maritime Sikh Society</p>
+                            <h2 className="text-2xl font-semibold mb-4 " >General Inquiry</h2>
+                            <p className="text-lg mb-2 font-medium">Sikh Society-Newfoundland, NL</p>
                             <p className="text-lg mb-2">680 Logy Bay Rd, Logy Bay, NL A1K 3B5</p>
                             <p className="text-lg mb-2">Phone: <a href="tel:+17097547454" className="text-brown-800 hover:underline">(709) 754-7454</a></p>
-                            <p className="text-lg mb-2">Email: <a href="mailto:maritimesikhs@gmail.com" className="text-brown-800 hover:underline">maritimesikhs@gmail.com</a></p>
+                            <p className="text-lg mb-2">Email: <a href="mailto:k@gmail.com" className="text-brown-800 hover:underline">k@gmail.com</a></p>
                         </div>
 
                         {/* Langar Section Card */}
@@ -39,7 +39,7 @@ export default function Contact() {
                             </div>
                             <h2 className="text-2xl font-semibold mb-4">Langar (Community Kitchen)</h2>
                             <p className="text-lg mb-2 font-medium">Navdeep Singh</p>
-                            <p className="text-lg mb-2">Phone: <a href="tel:+17093279685" className="text-brown-800 hover:underline">(709) 327 9685</a></p>
+                            <p className="text-lg mb-2">Phone: <a href="tel:+17093279685" className="text-brown-800 hover:underline">(709) 327-9685</a></p>
                         </div>
 
                         {/* IT Services Card */}
