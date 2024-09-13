@@ -56,6 +56,9 @@ export default function Navbar() {
                     <Link href="/blogs" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Blog
                     </Link>
+                    <Link href="/gurubani" className="text-gray-700 hover:text-blue-600 transition duration-200">
+                        Live Gurubani
+                    </Link>
                 </div>
             </div>
 
@@ -77,7 +80,9 @@ export default function Navbar() {
                     <Link href="/blogs" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Blog
                     </Link>
-
+                    <Link href="/gurubani" className="text-gray-700 hover:text-blue-600 transition duration-200">
+                        Live Gurubani
+                    </Link>
 
                 </div>
             )}
