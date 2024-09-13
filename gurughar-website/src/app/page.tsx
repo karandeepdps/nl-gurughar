@@ -12,7 +12,7 @@ export default function Home() {
 
                 {/* Inspirational Quote from Guru Granth Sahib Ji */}
                 <p className={styles.quote}>
-                    &quot;In the Company of the Guru, the mind becomes peaceful and the heart pure.&quot
+                    &quot;In the Company of the Guru, the mind becomes peaceful and the heart pure.&quot;
                 </p>
 
                 {/* Call to Action Buttons */}
