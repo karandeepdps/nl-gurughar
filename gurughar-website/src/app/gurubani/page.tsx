@@ -14,13 +14,13 @@ export default function GurubaniLive() {
                 </p>
 
                 {/* Live Audio Streams Section */}
-                <div className="row" style={{ backgroundColor: '#111b4e', maxWidth: '100%', padding: '1rem' }}>
+                <div className="row" style={{ backgroundColor: '#fbfbfb', maxWidth: '100%', padding: '1rem' }}>
 
                     {/* Live Kirtan Section */}
                     <div className="col-md-4 col-sm-12 col-lg-4">
                         <div className="text-center">
                             <p style={{ marginBottom: '0rem', paddingTop: '10px' }}>
-                                <a className="btn" role="button" style={{ color: '#fff' }}>
+                                <a className="btn" role="button" style={{ color: '#000000' }}>
                                     <strong>ਸਿੱਧਾ-ਪ੍ਰਸਾਰਣ / Live Kirtan</strong>
                                 </a>
                             </p>
@@ -42,7 +42,7 @@ export default function GurubaniLive() {
                     <div className="col-md-4 col-sm-12 col-lg-4">
                         <div className="text-center">
                             <p style={{ marginBottom: '0rem', paddingTop: '10px' }}>
-                                <a className="btn" role="button" style={{ color: '#fff' }}>
+                                <a className="btn" role="button" style={{ color: '#000000' }}>
                                     <strong>ਰੋਜ਼ਾਨਾ ਮੁੱਖਵਾਕ / Daily Mukhwak</strong>
                                 </a>
                             </p>
@@ -64,7 +64,7 @@ export default function GurubaniLive() {
                     <div className="col-md-4 col-sm-12 col-lg-4">
                         <div className="text-center">
                             <p style={{ marginBottom: '0rem', paddingTop: '10px' }}>
-                                <a className="btn" role="button" style={{ color: '#fff' }}>
+                                <a className="btn" role="button" style={{ color: '#000000' }}>
                                     <strong>ਮੁੱਖਵਾਕ ਕਥਾ (ਗੁ: ਮੰਜੀ ਸਾਹਿਬ) / Mukhwak Katha</strong>
                                 </a>
                             </p>
