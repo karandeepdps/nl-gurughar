@@ -14,19 +14,25 @@ export default function GurubaniLive() {
                 </p>
 
                 {/* Live Audio Streams Section */}
-                <div className="row" style={{ backgroundColor: '#ffffff', maxWidth: '100%', padding: '1rem' }}>
+                <div className="row" style={{ backgroundColor: '#111b4e', maxWidth: '100%', padding: '1rem' }}>
 
                     {/* Live Kirtan Section */}
                     <div className="col-md-4 col-sm-12 col-lg-4">
                         <div className="text-center">
                             <p style={{ marginBottom: '0rem', paddingTop: '10px' }}>
-                                <a className="btn" role="button" style={{ color: '#000000' }}>
+                                <a className="btn" role="button" style={{ color: '#fff' }}>
                                     <strong>ਸਿੱਧਾ-ਪ੍ਰਸਾਰਣ / Live Kirtan</strong>
                                 </a>
                             </p>
                         </div>
                         <div className="p-2 text-light">
-                            <audio id="audio_1" controls autoPlay style={{ width: '100%' }}>
+                            <audio
+                                id="audio_1"
+                                controls
+                                autoPlay
+                                playsInline  // Ensures it works inline on iOS
+                                style={{ width: '100%' }}
+                            >
                                 <source src="https://live.sgpc.net:8442/;nocache=889869" type="audio/mpeg" />
                             </audio>
                         </div>
@@ -36,13 +42,19 @@ export default function GurubaniLive() {
                     <div className="col-md-4 col-sm-12 col-lg-4">
                         <div className="text-center">
                             <p style={{ marginBottom: '0rem', paddingTop: '10px' }}>
-                                <a className="btn" role="button" style={{ color: '#000000' }}>
+                                <a className="btn" role="button" style={{ color: '#fff' }}>
                                     <strong>ਰੋਜ਼ਾਨਾ ਮੁੱਖਵਾਕ / Daily Mukhwak</strong>
                                 </a>
                             </p>
                         </div>
                         <div className="p-2 text-light">
-                            <audio id="audio_2" controls preload="none" style={{ width: '100%' }}>
+                            <audio
+                                id="audio_2"
+                                controls
+                                preload="none"
+                                playsInline  // Ensures it works inline on iOS
+                                style={{ width: '100%' }}
+                            >
                                 <source src="https://old.sgpc.net/hukumnama/jpeg%20hukamnama/hukamnama.mp3" type="audio/mpeg" />
                             </audio>
                         </div>
@@ -52,21 +64,27 @@ export default function GurubaniLive() {
                     <div className="col-md-4 col-sm-12 col-lg-4">
                         <div className="text-center">
                             <p style={{ marginBottom: '0rem', paddingTop: '10px' }}>
-                                <a className="btn" role="button" style={{ color: '#000000' }}>
+                                <a className="btn" role="button" style={{ color: '#fff' }}>
                                     <strong>ਮੁੱਖਵਾਕ ਕਥਾ (ਗੁ: ਮੰਜੀ ਸਾਹਿਬ) / Mukhwak Katha</strong>
                                 </a>
                             </p>
                         </div>
                         <div className="p-2 text-light">
-                            <audio id="audio_3" controls preload="none" style={{ width: '100%' }}>
+                            <audio
+                                id="audio_3"
+                                controls
+                                preload="none"
+                                playsInline  // Ensures it works inline on iOS
+                                style={{ width: '100%' }}
+                            >
                                 <source src="https://old.sgpc.net/hukumnama/jpeg%20hukamnama/katha.mp3" type="audio/mpeg" />
                             </audio>
                         </div>
                     </div>
                 </div>
 
-                {/* Description */}
-                <p className={styles.description}>
+                {/* Additional Description */}
+                <p className="text-gray-400 mt-8 text-center">
                     For the best experience, make sure your audio is enabled and enjoy the spiritual experience.
                 </p>
             </main>
