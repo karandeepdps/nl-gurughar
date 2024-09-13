@@ -11,7 +11,7 @@ export default function Contact() {
             <main className={styles.main}>
                 <h1 className={styles.heading}>Contact Us</h1>
                 <p className={styles.description}>
-                    We are always here to support our community. Please contact the Maritime Sikh Society for any questions, support, suggestions, or help.
+                    We are always here to support our community. Please contact the Sikh Society - Newfoundland, NL for any questions, support, suggestions, or help.
                 </p>
 
                 {/* Card Section */}
