@@ -1,60 +1,52 @@
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
+import styles from '../../../styles/Contact.module.css';
 
 export default function Contact() {
     return (
         <>
             <Navbar />
 
-            {/* Full-height wrapper with flex to push footer to the bottom */}
-            <div className="flex flex-col min-h-screen bg-gray-50">
+            {/* Main Content */}
+            <main className={styles.main}>
+                <h1 className={styles.heading}>Contact Us</h1>
+                <p className={styles.description}>
+                    We are always here to support our community. Please contact the Maritime Sikh Society for any questions, support, suggestions, or help.
+                </p>
 
-                {/* Content Area: grows to take available space */}
-                <div className="flex-grow flex flex-col items-center justify-center text-center p-2">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-6">Contact Us</h1>
-                    <p className="text-lg text-gray-600 mb-8 max-w-2xl">
-                        We are always here to support our community. Please contact the Maritime Sikh Society for any questions, support, suggestions, or help.
-                    </p>
+                {/* Card Section */}
+                <div className={styles.cardWrapper}>
 
-                    <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                        {/* General Inquiry Card */}
-                        <div className="bg-yellow-100 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-brown-700">
-                            <div className="flex items-center justify-center mb-4">
-                                {/* Add an SVG icon here if needed */}
-
-                            </div>
-                            <h2 className="text-2xl font-semibold mb-4 " >General Inquiry</h2>
-                            <p className="text-lg mb-2 font-medium">Sikh Society-Newfoundland, NL</p>
-                            <p className="text-lg mb-2">680 Logy Bay Rd, Logy Bay, NL A1K 3B5</p>
-                            <p className="text-lg mb-2">Phone: <a href="tel:+17097547454" className="text-brown-800 hover:underline">(709) 754-7454</a></p>
-                            <p className="text-lg mb-2">Email: <a href="mailto:k@gmail.com" className="text-brown-800 hover:underline">k@gmail.com</a></p>
-                        </div>
-
-                        {/* Langar Section Card */}
-                        <div className="bg-yellow-100 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-brown-700">
-                            <div className="flex items-center justify-center mb-4">
-                                {/* Add an SVG icon for Langar */}
-
-                            </div>
-                            <h2 className="text-2xl font-semibold mb-4">Langar (Community Kitchen)</h2>
-                            <p className="text-lg mb-2 font-medium">Navdeep Singh</p>
-                            <p className="text-lg mb-2">Phone: <a href="tel:+17093279685" className="text-brown-800 hover:underline">(709) 327-9685</a></p>
-                        </div>
-
-                        {/* IT Services Card */}
-                        <div className="bg-yellow-100 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-brown-700">
-                            <div className="flex items-center justify-center mb-4">
-                                {/* Add an SVG icon for IT Services */}
-
-                            </div>
-                        </div>
+                    {/* General Inquiry Card */}
+                    <div className={styles.card}>
+                        <h2>General Inquiry</h2>
+                        <p><strong>Sikh Society - Newfoundland, NL</strong></p>
+                        <p>680 Logy Bay Rd, Logy Bay, NL A1K 3B5</p>
+                        <p>Phone: <a href="tel:+17097547454">(709) 754-7454</a></p>
+                        <p>Email: <a href="mailto:k@gmail.com">k@gmail.com</a></p>
                     </div>
+
+                    {/* Langar Section Card */}
+                    <div className={styles.card}>
+                        <h2>Langar (Community Kitchen)</h2>
+                        <p><strong>Navdeep Singh</strong></p>
+                        <p>Phone: <a href="tel:+17093279685">(709) 327-9685</a></p>
+                    </div>
+
+
                 </div>
 
-                {/* Footer always at the bottom */}
-                <Footer />
-            </div>
+                {/* Google Map */}
+                <section className={styles.mapContainer}>
+                    <iframe
+                        title="Gurudwara Location"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.0666124138943!2d-52.69071569999999!3d47.6248364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca6d084c2652f%3A0x923b81dc6697834f!2s680%20Logy%20Bay%20Rd%2C%20Logy%20Bay%2C%20NL%20A1K%203A2!5e0!3m2!1sen!2sca!4v1725497693959!5m2!1sen!2sca"
+                        loading="lazy"
+                    ></iframe>
+                </section>
+            </main>
+
+            <Footer />
         </>
     );
 }
