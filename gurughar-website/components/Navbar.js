@@ -53,6 +53,9 @@ export default function Navbar() {
                     <Link href="/donation" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Donate
                     </Link>
+                    <Link href="/blogs" className="text-gray-700 hover:text-blue-600 transition duration-200">
+                        Blog
+                    </Link>
                 </div>
             </div>
 
@@ -70,6 +73,9 @@ export default function Navbar() {
                     </Link>
                     <Link href="/donation" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Donate
+                    </Link>
+                    <Link href="/blogs" className="text-gray-700 hover:text-blue-600 transition duration-200">
+                        Blog
                     </Link>
 
 
