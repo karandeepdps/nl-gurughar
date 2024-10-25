@@ -15,10 +15,9 @@ const events: Event[] = [
         name: 'Bandi Chhor Divas',
         date: 'November 1, 2024',
         description: 'Bandi Chhor Divas (Day of Liberation) is a Sikh celebration commemorating the release of Guru Hargobind and 52 Hindu kings from Gwalior Fort, coinciding with Diwali in Punjab and across India.',
-        image: 'https://en.wikipedia.org/wiki/File:Diwali_fireworks_and_lighting_celebrations_India_2012.jpg',
+        image: '/images/guruji.jpeg',
         link: 'https://en.wikipedia.org/wiki/Bandi_Chhor_Divas',
     },
-    // Add more events here
 ];
 
 export default function Events() {
