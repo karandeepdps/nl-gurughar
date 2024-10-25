@@ -42,7 +42,7 @@ export default function Home() {
                             <strong>Newfoundland Sikh Society</strong><br />
                             680 Logy Bay Rd, St. John&apos;s, NL, A1K 3B5<br />
                             Tel: +1 (709) 754-7454.<br />
-                            Email: <a href="mailto:K@gmail.com">K@gmail.com</a>
+                            Email: <a href="mailto:nfss.gurdwara@gmail.com">nfss.gurdwara@gmail.com</a>
                         </p>
                     </div>
 
