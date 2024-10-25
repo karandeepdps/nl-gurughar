@@ -28,13 +28,15 @@ export default function Payment() {
 
 
     const handleCustomDonation = () => {
-        if (customAmount && !isNaN(customAmount) && customAmount > 0) {
-            const redirectUrl = `https://newfoundland-sikh-society.square.site/?amount=${customAmount}`;
-            window.location.href = redirectUrl;
-        } else {
-            alert('Please enter a valid amount.');
-        }
-    };
+    const amount = parseFloat(customAmount); // Convert customAmount to a number
+    if (customAmount && !isNaN(amount) && amount > 0) {
+        const redirectUrl = `https://newfoundland-sikh-society.square.site/?amount=${amount}`;
+        window.location.href = redirectUrl;
+    } else {
+        alert('Please enter a valid amount.');
+    }
+};
+
 
     return (
         <>
