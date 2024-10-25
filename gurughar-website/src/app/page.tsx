@@ -7,19 +7,19 @@ export default function Home() {
         <>
             <Navbar />
             <main className={styles.main}>
-                <h1 className={styles.heading}>Welcome to Sikh Society Newfoundland, NL</h1>
+                <h1 className={styles.heading}>Welcome to Newfoundland Sikh Society</h1>
                 <p className={styles.description}>A place of worship and community for all.</p>
 
                 {/* Inspirational Quote from Guru Granth Sahib Ji */}
                 <p className={styles.quote}>
-                    &quot;In the Company of the Guru, the mind becomes peaceful and the heart pure.&quot;
+                    &quot;Those who have loved are those that have found God..&quot;
                 </p>
 
                 {/* Call to Action Buttons */}
-                <div className={styles.callToAction}>
+                {/*<div className={styles.callToAction}>
                     <button>Learn More</button>
                     <button>Get Involved</button>
-                </div>
+                </div>*/}
             </main>
 
             {/* Community Services Section */}
@@ -39,7 +39,7 @@ export default function Home() {
                     <div className={styles.contactInfo}>
                         <h2>Contact Us</h2>
                         <p>
-                            <strong>Gurudwara Sikh Society of Newfoundland</strong><br />
+                            <strong>Newfoundland Sikh Society</strong><br />
                             680 Logy Bay Rd, St. John&apos;s, NL, A1K 3B5<br />
                             Tel: +1 (709) 754-7454.<br />
                             Email: <a href="mailto:K@gmail.com">K@gmail.com</a>

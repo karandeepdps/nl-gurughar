@@ -33,6 +33,13 @@ export default function Contact() {
                         <p>Phone: <a href="tel:+17093279685">(709) 327-9685</a></p>
                     </div>
 
+                     {/* Langar Section Card */}
+                    <div className={styles.card}>
+                        <h2>IT Services </h2>
+                        <p><strong>Karandeep Singh</strong></p>
+                        <p>Email: <a href="email:karandeepdps@gmail.com">karandeepdps@gmail.com</a></p>
+                    </div>
+
 
                 </div>
 

@@ -6,8 +6,8 @@ function openURL(amount) {
             amount: amount * 100, // Convert to cents
             currency_code: "CAD" // Updated to CAD
         },
-        callback_url: "https://main.dx0vj06xbsa0k.amplifyapp.com/payment",
-        client_id: "sq0idp-9WmDgvLG8vsQWAYvy1C3uw",
+        callback_url: "https://nl-gurughar.vercel.app/donation",
+        client_id: "sq0idp-Rw01PmprxxLnmUv_nLKYZA",
         version: "1.3",
         notes: "Transaction Notes",
         options: {
@@ -16,7 +16,7 @@ function openURL(amount) {
     };
 
     var posUrl = "square-commerce-v1://payment/create?data=" + encodeURIComponent(JSON.stringify(dataParameter));
-    var onlinePaymentUrl = "https://my-business-707508.square.site/";
+    var onlinePaymentUrl = "https://newfoundland-sikh-society.square.site/";
 
     // Create a hidden iframe to attempt to open the POS URL
     var iframe = document.createElement('iframe');
