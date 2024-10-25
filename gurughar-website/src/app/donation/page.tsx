@@ -22,9 +22,10 @@ export default function Payment() {
         { amount: 1001, image: '/images/donation9.jpg', description: 'ਦਸਵੰਦ ਸੇਵਾ' },
     ];
 
-    const handleCustomAmountChange = (e) => {
-        setCustomAmount(e.target.value);
-    };
+    const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCustomAmount(e.target.value);
+};
+
 
     const handleCustomDonation = () => {
         if (customAmount && !isNaN(customAmount) && customAmount > 0) {
