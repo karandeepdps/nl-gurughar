@@ -23,7 +23,6 @@ export default function Contact() {
                         <p><strong>Sikh Society - Newfoundland, NL</strong></p>
                         <p>680 Logy Bay Rd, Logy Bay, NL A1K 3B5</p>
                         <p>Phone: <a href="tel:+17097547454">(709) 754-7454</a></p>
-                        <p>Email: <a href="mailto:k@gmail.com">k@gmail.com</a></p>
                     </div>
 
                     {/* Langar Section Card */}
