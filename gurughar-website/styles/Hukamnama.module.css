@@ -1,0 +1,34 @@
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.hukamnamaContent {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin: 20px 0;
+}
+
+.card {
+    background: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px; /* Space around each card */
+    width: 300px; /* Fixed width for cards */
+    height: 500px; /* Fixed height to ensure uniform size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Distribute space evenly */
+    text-align: justify; /* Justify text within the card */
+        overflow: auto; /* Add scrollbar if content exceeds the height */
+
+}
+
+
+.gurmukhi, .english, .punjabi, .spanish {
+    font-size: 1.2em; 
+    margin-bottom: 10px;
+}

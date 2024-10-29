@@ -44,6 +44,9 @@ export default function Navbar() {
                     <Link href="/" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Home
                     </Link>
+                     <Link href="/hukamnama" className="text-gray-700 hover:text-blue-600 transition duration-200">
+                        Daily Hukamnama
+                    </Link>
                      <Link href="/events" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Events
                     </Link>
@@ -62,6 +65,7 @@ export default function Navbar() {
                     <Link href="/gurubani" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Live Gurubani
                     </Link>
+                   
                 </div>
             </div>
 
@@ -70,6 +74,9 @@ export default function Navbar() {
                 <div className="md:hidden flex flex-col items-center space-y-2 py-4">
                     <Link href="/" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Home
+                    </Link>
+                    <Link href="/hukamnama" className="text-gray-700 hover:text-blue-600 transition duration-200">
+                        Daily Hukamnama
                     </Link>
                      <Link href="/events" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Events
@@ -89,6 +96,7 @@ export default function Navbar() {
                     <Link href="/gurubani" className="text-gray-700 hover:text-blue-600 transition duration-200">
                         Live Gurubani
                     </Link>
+
 
                 </div>
             )}
