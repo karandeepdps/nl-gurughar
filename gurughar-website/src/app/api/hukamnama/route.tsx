@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
     try {
-        const response = await fetch(`https://api.gurbaninow.com/v2/hukamnama/today?${Math.random() * 100000000000000000}`);
+        const response = await fetch(`https://api.gurbaninow.com/v2/hukamnama/today`);
         
         if (!response.ok) {
             throw new Error(`Failed to fetch: ${response.statusText}`);
