@@ -1,7 +1,8 @@
 .noticeBox {
-    background-color: #f9f9f9;
-    border: 2px solid #ffcc00;
-    border-radius: 10px;
+    background-color: #fffbea; /* Soft yellow for emphasis */
+    border: 2px solid #ffc107; /* Highlighted border */
+    border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
