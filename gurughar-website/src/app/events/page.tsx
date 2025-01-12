@@ -1,9 +1,10 @@
-"use client"
-import { useState } from 'react';
-import Navbar from '../../../components/Navbar';
-import Footer from '../../../components/Footer';
-import Modal from '../../../components/Modal';
-import styles from '../../../styles/Events.module.css';
+"use client";
+
+import { useState } from "react";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
+import Modal from "../../../components/Modal";
+import styles from "../../../styles/Events.module.css";
 
 type Event = {
     name: string;
@@ -15,38 +16,60 @@ type Event = {
 
 const events: Event[] = [
     {
-        name: 'Bandi Chhor Divas',
-        date: 'November 1, 2024',
-        description: 'Bandi Chhor Divas (Day of Liberation) is a Sikh celebration commemorating the release of Guru Hargobind and 52 Hindu kings from Gwalior Fort, coinciding with Diwali in Punjab and across India.',
-        image: '/images/guruji.jpeg',
-        link: 'https://en.wikipedia.org/wiki/Bandi_Chhor_Divas',
+        name: "Bandi Chhor Divas",
+        date: "November 1, 2024",
+        description:
+            "Bandi Chhor Divas (Day of Liberation) is a Sikh celebration commemorating the release of Guru Hargobind and 52 Hindu kings from Gwalior Fort, coinciding with Diwali in Punjab and across India.",
+        image: "/images/guruji.jpeg",
+        link: "https://en.wikipedia.org/wiki/Bandi_Chhor_Divas",
     },
     {
-        name: 'Saka Panja Sahib',
-        date: 'October 30, 1922',
-        description: 'Saka Panja Sahib is a historic event that symbolizes the sacrifice of Sikhs who gave their lives to serve Langar to fellow Sikhs who were imprisoned.',
-        image: '/images/saka/1.PNG',
-        link: '', 
+        name: "Saka Panja Sahib",
+        date: "October 30, 1922",
+        description:
+            "Saka Panja Sahib is a historic event that symbolizes the sacrifice of Sikhs who gave their lives to serve Langar to fellow Sikhs who were imprisoned.",
+        image: "/images/saka/1.PNG",
+        link: "",
     },
 ];
+
+const notice = {
+    title: "Gurudwara Opening Update",
+    description: `
+        Guru Pyari Sadh Sangat Ji,
+        Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh!
+        With the blessings of Akal Purakh, we have great news to share with you all. Considering the increasing number of Sangat visiting in recent months, the Gurudwara Sahib will now be open on additional days.
+
+        **Opening Timings:**
+        - Friday: 6pm-9pm
+        - Saturday: 10am-1pm
+        - Sunday: 10am-1pm
+
+        Langar Seva will continue on Sundays for now, with plans to expand in the future. Please follow parking rules and get in touch with the Executive Committee for any questions or suggestions.
+
+        Best Wishes,  
+        Newfoundland Sikh Society  
+        680 Logy Bay Road, Logy Bay, NL, Canada, A1K 3B5
+    `,
+};
 
 export default function Events() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const sakaText = `
-        Saka Panja Sahib is a real story of sacrifice for Sewa. 
-        The Saka occurred at Panja Sahib, Hasan Abdal, Pakistan. 
+        Saka Panja Sahib is a real story of sacrifice for Sewa.
+        The Saka occurred at Panja Sahib, Hasan Abdal, Pakistan.
         Bhai Karam Singh & Bhai Partap Singh attained martyrdom in this incident.
     `;
     const sakaImages = [
-        '/images/saka/1.PNG',
-        '/images/saka/2.PNG',
-        '/images/saka/3.PNG',
-        '/images/saka/4.PNG',
-        '/images/saka/5.PNG',
-        '/images/saka/6.PNG',
-        '/images/saka/7.PNG',
-        '/images/saka/8.PNG',
+        "/images/saka/1.PNG",
+        "/images/saka/2.PNG",
+        "/images/saka/3.PNG",
+        "/images/saka/4.PNG",
+        "/images/saka/5.PNG",
+        "/images/saka/6.PNG",
+        "/images/saka/7.PNG",
+        "/images/saka/8.PNG",
     ];
 
     const handleOpenModal = () => {
@@ -62,21 +85,25 @@ export default function Events() {
             <Navbar />
             <main className={styles.main}>
                 <h1>Upcoming Events</h1>
+                <div className={styles.notice}>
+                    <h2>{notice.title}</h2>
+                    <p>{notice.description}</p>
+                </div>
                 <div className={styles.eventGrid}>
                     {events.map((event, index) => (
-                        <EventCard 
-                            key={index} 
-                            event={event} 
-                            onLearnMore={event.name === 'Saka Panja Sahib' ? handleOpenModal : undefined} 
+                        <EventCard
+                            key={index}
+                            event={event}
+                            onLearnMore={event.name === "Saka Panja Sahib" ? handleOpenModal : undefined}
                         />
                     ))}
                 </div>
-                <Modal 
-                    isOpen={isModalOpen} 
-                    onClose={handleCloseModal} 
-                    title="Saka Panja Sahib" 
-                    images={sakaImages} 
-                    text={sakaText} 
+                <Modal
+                    isOpen={isModalOpen}
+                    onClose={handleCloseModal}
+                    title="Saka Panja Sahib"
+                    images={sakaImages}
+                    text={sakaText}
                 />
             </main>
             <Footer />
