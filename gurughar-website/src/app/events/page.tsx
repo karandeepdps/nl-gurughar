@@ -1,10 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { marked } from "marked"; // Import marked library
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import Modal from "../../../components/Modal";
 import styles from "../../../styles/Events.module.css";
 
 type Event = {
@@ -42,7 +40,6 @@ Newfoundland Sikh Society, 680 Logy Bay Road, Logy Bay, NL, Canada, A1K 3B5.
 ];
 
 export default function Events() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <>
