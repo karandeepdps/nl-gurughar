@@ -11,15 +11,38 @@ type Event = {
     date: string;
     description: string;
     image: string;
-    link: string;
+    link?: string;
 };
 
 const events: Event[] = [
     {
+        name: "Gurudwara Opening Update",
+        date: "Effective Immediately",
+        description: `
+            **Guru Pyari Sadh Sangat Ji,**
+            **Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh!**
+            
+            With the blessings of Akal Purakh, we are thrilled to announce the **Gurudwara Sahib will now be open on additional days!** 
+
+            **Opening Timings:**
+            - **Friday**: 6 PM - 9 PM
+            - **Saturday**: 10 AM - 1 PM
+            - **Sunday**: 10 AM - 1 PM
+
+            Currently, **Langar Seva** will continue only on Sundays, with plans to expand this service in the future. Please follow parking guidelines when visiting.
+
+            If you have questions or suggestions, contact the **Executive Committee**.
+
+            **Location:**  
+            Newfoundland Sikh Society, 680 Logy Bay Road, Logy Bay, NL, Canada, A1K 3B5.
+        `,
+        image: "/images/notice.png", // Replace with a relevant image or icon
+    },
+    {
         name: "Bandi Chhor Divas",
         date: "November 1, 2024",
         description:
-            "Bandi Chhor Divas (Day of Liberation) is a Sikh celebration commemorating the release of Guru Hargobind and 52 Hindu kings from Gwalior Fort, coinciding with Diwali in Punjab and across India.",
+            "Bandi Chhor Divas (Day of Liberation) commemorates the release of Guru Hargobind Ji and 52 Hindu kings from Gwalior Fort. It coincides with Diwali in Punjab and across India.",
         image: "/images/guruji.jpeg",
         link: "https://en.wikipedia.org/wiki/Bandi_Chhor_Divas",
     },
@@ -27,31 +50,10 @@ const events: Event[] = [
         name: "Saka Panja Sahib",
         date: "October 30, 1922",
         description:
-            "Saka Panja Sahib is a historic event that symbolizes the sacrifice of Sikhs who gave their lives to serve Langar to fellow Sikhs who were imprisoned.",
+            "Saka Panja Sahib is a historic event symbolizing the sacrifice of Sikhs who gave their lives to serve Langar to fellow Sikhs who were imprisoned.",
         image: "/images/saka/1.PNG",
-        link: "",
     },
 ];
-
-const notice = {
-    title: "Gurudwara Opening Update",
-    description: `
-        Guru Pyari Sadh Sangat Ji,
-        Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh!
-        With the blessings of Akal Purakh, we have great news to share with you all. Considering the increasing number of Sangat visiting in recent months, the Gurudwara Sahib will now be open on additional days.
-
-        **Opening Timings:**
-        - Friday: 6pm-9pm
-        - Saturday: 10am-1pm
-        - Sunday: 10am-1pm
-
-        Langar Seva will continue on Sundays for now, with plans to expand in the future. Please follow parking rules and get in touch with the Executive Committee for any questions or suggestions.
-
-        Best Wishes,  
-        Newfoundland Sikh Society  
-        680 Logy Bay Road, Logy Bay, NL, Canada, A1K 3B5
-    `,
-};
 
 export default function Events() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -85,10 +87,6 @@ export default function Events() {
             <Navbar />
             <main className={styles.main}>
                 <h1>Upcoming Events</h1>
-                <div className={styles.notice}>
-                    <h2>{notice.title}</h2>
-                    <p>{notice.description}</p>
-                </div>
                 <div className={styles.eventGrid}>
                     {events.map((event, index) => (
                         <EventCard
@@ -113,11 +111,11 @@ export default function Events() {
 
 function EventCard({ event, onLearnMore }: { event: Event; onLearnMore?: () => void }) {
     return (
-        <div className={styles.eventCard}>
+        <div className={`${styles.eventCard} ${event.name === "Gurudwara Opening Update" ? styles.noticeBox : ""}`}>
             <img src={event.image} alt={event.name} className={styles.eventImage} />
             <h2>{event.name}</h2>
             <p>{event.date}</p>
-            <p>{event.description}</p>
+            <p dangerouslySetInnerHTML={{ __html: event.description }}></p>
             {onLearnMore && (
                 <button onClick={onLearnMore} className={styles.learnMoreButton}>
                     Learn More
