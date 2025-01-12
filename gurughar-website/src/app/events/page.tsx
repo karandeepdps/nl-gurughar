@@ -38,21 +38,21 @@ const events: Event[] = [
         `,
         image: "/images/notice.png", // Replace with a relevant image or icon
     },
-    {
-        name: "Bandi Chhor Divas",
-        date: "November 1, 2024",
-        description:
-            "Bandi Chhor Divas (Day of Liberation) commemorates the release of Guru Hargobind Ji and 52 Hindu kings from Gwalior Fort. It coincides with Diwali in Punjab and across India.",
-        image: "/images/guruji.jpeg",
-        link: "https://en.wikipedia.org/wiki/Bandi_Chhor_Divas",
-    },
-    {
-        name: "Saka Panja Sahib",
-        date: "October 30, 1922",
-        description:
-            "Saka Panja Sahib is a historic event symbolizing the sacrifice of Sikhs who gave their lives to serve Langar to fellow Sikhs who were imprisoned.",
-        image: "/images/saka/1.PNG",
-    },
+    // {
+    //     name: "Bandi Chhor Divas",
+    //     date: "November 1, 2024",
+    //     description:
+    //         "Bandi Chhor Divas (Day of Liberation) commemorates the release of Guru Hargobind Ji and 52 Hindu kings from Gwalior Fort. It coincides with Diwali in Punjab and across India.",
+    //     image: "/images/guruji.jpeg",
+    //     link: "https://en.wikipedia.org/wiki/Bandi_Chhor_Divas",
+    // },
+    // {
+    //     name: "Saka Panja Sahib",
+    //     date: "October 30, 1922",
+    //     description:
+    //         "Saka Panja Sahib is a historic event symbolizing the sacrifice of Sikhs who gave their lives to serve Langar to fellow Sikhs who were imprisoned.",
+    //     image: "/images/saka/1.PNG",
+    // },
 ];
 
 export default function Events() {
